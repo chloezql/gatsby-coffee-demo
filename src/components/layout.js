@@ -14,10 +14,14 @@ import "./layout.css"
 import {
   FaGulp
 }from 'react-icons/fa';
+import Navbar from './globals/Navbar';
 
 
-
-const Layout = ({ children }) => <>{children}</>;
+const Layout = ({ children }) => 
+<>
+<Navbar/>
+{children}
+</>;
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
